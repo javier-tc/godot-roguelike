@@ -1,6 +1,7 @@
 extends Character
 
 onready var sword: Node2D = get_node("Sword")
+onready var sword_hitbox: Area2D = get_node("Sword/Node2D/Sprite/Hitbox")
 onready var sword_animation_player: AnimationPlayer = sword.get_node("SwordAnimationPlayer")
 
 func _process(_delta: float) -> void:
@@ -12,6 +13,7 @@ func _process(_delta: float) -> void:
 		animated_sprite.flip_h = true
 		
 	sword.rotation = mouse_direction.angle()
+	sword_hitbox.knockback_direction = mouse_direction
 	if mouse_direction.x < 0 and sword.scale.y == 1:
 		sword.scale.y = -1 * sword.scale.y
 	elif mouse_direction.x > 0 and sword.scale.y == -1:
