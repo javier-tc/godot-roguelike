@@ -18,8 +18,7 @@ func _process(_delta: float) -> void:
 		sword.scale.y = -1 * sword.scale.y
 	elif mouse_direction.x > 0 and sword.scale.y == -1:
 		sword.scale.y = -1 * sword.scale.y
-	if Input.is_action_just_pressed("ui_attack") and not sword_animation_player.is_playing():
-		sword_animation_player.play("attack")
+	
 		
 		
 func get_input() -> void:
@@ -32,3 +31,5 @@ func get_input() -> void:
 		mov_direction += Vector2.LEFT
 	if Input.is_action_pressed("ui_right"):
 		mov_direction += Vector2.RIGHT
+	if Input.is_action_just_pressed("ui_attack") and not sword_animation_player.is_playing():
+		sword_animation_player.play("attack")
