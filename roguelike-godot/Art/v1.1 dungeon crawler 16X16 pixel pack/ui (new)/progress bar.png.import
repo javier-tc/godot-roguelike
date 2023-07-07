@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door_fullyopen.png-477cfd7946edaa3b938ce886327450dc.stex"
+path="res://.import/progress bar.png-5c40abd3d5a4526b333c315dbd5ab108.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_fullyopen.png"
-dest_files=[ "res://.import/door_fullyopen.png-477cfd7946edaa3b938ce886327450dc.stex" ]
+source_file="res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/progress bar.png"
+dest_files=[ "res://.import/progress bar.png-5c40abd3d5a4526b333c315dbd5ab108.stex" ]
 
 [params]
 
