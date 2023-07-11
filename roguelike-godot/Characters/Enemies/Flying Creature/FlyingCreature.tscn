@@ -53,7 +53,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=6]
-radius = 3.0
+radius = 4.0
 
 [sub_resource type="Animation" id=15]
 resource_name = "RESET"
@@ -204,7 +204,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=16]
-radius = 4.0
+radius = 3.0
 
 [node name="FlyingCreature" instance=ExtResource( 1 )]
 script = ExtResource( 6 )
