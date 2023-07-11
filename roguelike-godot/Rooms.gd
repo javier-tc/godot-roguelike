@@ -44,7 +44,7 @@ func _spawn_rooms() -> void:
 				previous_room_tilemap.set_cellv(exit_tile_pos + Vector2(1,-y), RIGHT_WALL_TILE_INDEX)
 			
 			var room_tilemap: TileMap = room.get_node("TileMap")
-			room.position = previous_room_door.global_position + Vector2.UP * room_tilemap.get_used_rect().size.y * TILE_SIZE + Vector2.UP * (1 + corridor_height) * TILE_SIZE + Vector2.LEFT * room_tilemap.world_to_map(room.get_node("Entrance/Position2D2").position).x * TILE_SIZE
+			room.position = previous_room_door.global_position + Vector2.UP * room_tilemap.get_used_rect().size.y * TILE_SIZE + Vector2.UP * (corridor_height) * TILE_SIZE + Vector2.LEFT * room_tilemap.world_to_map(room.get_node("Entrance/Position2D2").position).x * TILE_SIZE
 			
 		add_child(room)
 		previous_room = room
