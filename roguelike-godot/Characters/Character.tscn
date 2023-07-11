@@ -5,7 +5,6 @@
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
-hp = 4
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 
