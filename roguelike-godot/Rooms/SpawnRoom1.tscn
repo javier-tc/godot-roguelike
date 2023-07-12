@@ -21,7 +21,7 @@ tile_data = PoolIntArray( 131078, 1, 262148, 131079, 1, 458754, 131080, 1, 45875
 position = Vector2( 304, 48 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( 304, 72 )
+position = Vector2( 304, 80 )
 shape = SubResource( 1 )
 
 [node name="PlayerSpawnPos" type="Position2D" parent="." index="7"]

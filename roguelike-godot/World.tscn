@@ -29,8 +29,6 @@ tint_progress = Color( 0.705882, 0.192157, 0.192157, 1 )
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 201, 213 )
+position = Vector2( 184, 200 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[connection signal="hp_changed" from="Player" to="UI" method="_on_Player_hp_changed"]

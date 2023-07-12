@@ -92,7 +92,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ true ]
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=17]
@@ -118,14 +118,14 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.77 ),
+"times": PoolRealArray( 0, 0.91 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
 
 [sub_resource type="RectangleShape2D" id=18]
-extents = Vector2( 16, 16 )
+extents = Vector2( 16, 12 )
 
 [node name="Door" type="StaticBody2D"]
 collision_mask = 0
@@ -139,5 +139,5 @@ anims/RESET = SubResource( 16 )
 anims/open = SubResource( 17 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 4 )
 shape = SubResource( 18 )
-disabled = true

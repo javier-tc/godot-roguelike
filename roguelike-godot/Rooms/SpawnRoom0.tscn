@@ -4,7 +4,7 @@
 [ext_resource path="res://Rooms/Door.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 8 )
+extents = Vector2( 17, 10 )
 
 [node name="SpawnRoom0" instance=ExtResource( 1 )]
 
@@ -21,7 +21,7 @@ tile_data = PoolIntArray( 65538, 1, 262148, 65539, 1, 458754, 65540, 1, 458754, 
 position = Vector2( 176, 32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( 176, 56 )
+position = Vector2( 176, 64 )
 shape = SubResource( 1 )
 
 [node name="PlayerSpawnPos" type="Position2D" parent="." index="7"]

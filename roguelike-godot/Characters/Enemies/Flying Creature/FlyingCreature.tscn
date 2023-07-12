@@ -204,7 +204,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="CircleShape2D" id=16]
-radius = 3.0
+radius = 5.0
 
 [node name="FlyingCreature" instance=ExtResource( 1 )]
 script = ExtResource( 6 )
