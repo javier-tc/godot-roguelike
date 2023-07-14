@@ -274,6 +274,7 @@ tracks/1/keys = {
 script = ExtResource( 5 )
 acceleration = 30
 max_speed = 70
+projectile_speed = 150
 
 [node name="AnimatedSprite" parent="." index="0"]
 frames = SubResource( 7 )
@@ -291,3 +292,11 @@ anims/move = SubResource( 21 )
 
 [node name="FiniteStateMachine" parent="." index="3"]
 script = ExtResource( 6 )
+
+[node name="AttackTimer" type="Timer" parent="." index="5"]
+wait_time = 1.5
+
+[node name="AimRayCast" type="RayCast2D" parent="." index="6"]
+enabled = true
+
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]

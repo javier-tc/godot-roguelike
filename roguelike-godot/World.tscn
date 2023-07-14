@@ -32,3 +32,5 @@ script = ExtResource( 3 )
 position = Vector2( 184, 200 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="hp_changed" from="Player" to="UI" method="_on_Player_hp_changed"]

@@ -25,13 +25,14 @@ func move() -> void:
 	velocity = velocity.limit_length(max_speed)
 
 func take_damage(dmg: int, dir: Vector2, force: int) -> void:
-	self.hp -= dmg
-	if hp > 0:
-		state_machine.set_state(state_machine.states.hurt)
-		velocity += dir * force
-	else:
-		state_machine.set_state(state_machine.states.dead)
-		velocity += dir * force * 2
+	if state_machine.state != state_machine.states.hurt and state_machine.state != state_machine.states.dead:
+		self.hp -= dmg
+		if hp > 0:
+			state_machine.set_state(state_machine.states.hurt)
+			velocity += dir * force
+		else:
+			state_machine.set_state(state_machine.states.dead)
+			velocity += dir * force * 2
 
 func set_hp(new_hp) -> void:
 	hp = new_hp
